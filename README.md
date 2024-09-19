@@ -1,0 +1,2 @@
+## Scala with collocation test
+

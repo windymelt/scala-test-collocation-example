@@ -4,6 +4,8 @@ val scala3Version = "3.5.0"
 // make compile sources directory and test sources directory be the same directory
 Compile / unmanagedSourceDirectories := Seq(baseDirectory.value / "src")
 Test / unmanagedSourceDirectories := (Compile / unmanagedSourceDirectories).value
+Compile / resourceDirectory := baseDirectory.value / "resources"
+Test / resourceDirectory := baseDirectory.value / "testResources"
 
 // `*.test.scala` are test sources; all other `*.scala` files are compile sources
 Compile / unmanagedSources / fileInputIncludeFilter := "**/*.scala"
